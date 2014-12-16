@@ -1,6 +1,11 @@
 require "pry"
 class AnswersController < ApplicationController
 
+  def new
+    @answer = Answer.new
+    redirect_to question_answer_path
+  end
+
 
   def create
     # binding.pry

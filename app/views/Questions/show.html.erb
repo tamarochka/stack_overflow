@@ -13,13 +13,7 @@ Question: <%= @question.title %>
 <p>
   <h3>Answers:</h3>
   <% @question.answers.each do |answer|%>
-    <%= answer.description %>
+    <li><%= answer.description %></li>
   <% end %>
 </p>
-<%= form_for @answer,url: question_answers_path(@question) do |f| %>
-  <p>
-    <%= f.label :Your_answer %><br />
-    <%= f.text_area :description, rows:5 %>
-  </p>
-  <p><%= f.submit "Answer this question" %></p>
-<% end %>
+<%= render 'answer_form' %>

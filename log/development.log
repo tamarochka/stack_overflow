@@ -17771,3 +17771,794 @@ Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:27:26
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:27:26 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:35:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 151ms (Views: 133.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:08 -0500
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:35:09 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered questions/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 19ms
+
+SyntaxError (/Users/Tamara/Desktop/programs/rescue-mission/app/views/questions/show.html.erb:19: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: 'answer_form' );@output_buff...
+...                               ^):
+  app/views/questions/show.html.erb:19: syntax error, unexpected tLABEL
+
+
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:35:09 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered questions/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/Tamara/Desktop/programs/rescue-mission/app/views/questions/show.html.erb:19: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: 'answer_form' );@output_buff...
+...                               ^):
+  app/views/questions/show.html.erb:19: syntax error, unexpected tLABEL
+
+
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:31 -0500
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:35:33 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mAnswer Load (0.5ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (22.3ms)
+  Rendered questions/show.html.erb within layouts/application (102.7ms)
+Completed 200 OK in 133ms (Views: 130.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/questions/2/answers" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"new answer\r\nnew answer\r\nnew answer\r\nnew answer\r\nnew answer"}, "commit"=>"Answer this question", "question_id"=>"2"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-16 17:35:58.241028"], ["description", "new answer\r\nnew answer\r\nnew answer\r\nnew answer\r\nnew answer"], ["question_id", 2], ["updated_at", "2014-12-16 17:35:58.241028"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:35:58 -0500
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:36:00 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?[0m  [["question_id", 3]]
+  Rendered questions/_answer_form.html.erb (1.1ms)
+  Rendered questions/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:36:03 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:36:05 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (0.9ms)
+  Rendered questions/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:36:06 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-12-16 12:36:07 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?[0m  [["question_id", 1]]
+  Rendered questions/_answer_form.html.erb (1.4ms)
+  Rendered questions/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:36:11 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:37:24 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.3ms)
+  Rendered questions/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 86ms (Views: 74.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:37:26 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:37:27 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?[0m  [["question_id", 3]]
+  Rendered questions/_answer_form.html.erb (1.0ms)
+  Rendered questions/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/questions/3/answers" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"shvd.kjahkvhalsukvglaugv"}, "commit"=>"Answer this question", "question_id"=>"3"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-16 17:37:31.516133"], ["description", "shvd.kjahkvhalsukvglaugv"], ["question_id", 3], ["updated_at", "2014-12-16 17:37:31.516133"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:31 -0500
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:37:33 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?[0m  [["question_id", 3]]
+  Rendered questions/_answer_form.html.erb (1.0ms)
+  Rendered questions/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/questions/3/answers" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"dfa;ak'ldhbvailhdbiaodhb;ioahbf;"}, "commit"=>"Answer this question", "question_id"=>"3"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-16 17:37:47.319950"], ["description", "dfa;ak'ldhbvailhdbiaodhb;ioahbf;"], ["question_id", 3], ["updated_at", "2014-12-16 17:37:47.319950"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC[0m
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:37:47 -0500
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:37:48 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?[0m  [["question_id", 3]]
+  Rendered questions/_answer_form.html.erb (1.1ms)
+  Rendered questions/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:37:52 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:37:53 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.2ms)
+  Rendered questions/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.9ms)
+  Rendered questions/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 50ms (Views: 39.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:29 -0500
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.1ms)
+  Rendered questions/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:31 -0500
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.2ms)
+  Rendered questions/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:38:56 -0500
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.3ms)
+  Rendered questions/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:39:06 -0500
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:39:48 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (0.8ms)
+  Rendered questions/show.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @answer,url: question_answers_path(@question) do |f| %>
+    2:   <p>
+    3:     <%= f.label :Your_answer %><br />
+    4:     <%= f.text_area :description, rows:5 %>
+  app/views/questions/_answer_form.html.erb:1:in `_app_views_questions__answer_form_html_erb__433800736289070820_70299291082220'
+  app/views/questions/show.html.erb:19:in `_app_views_questions_show_html_erb___4357806748526255910_70299292669100'
+
+
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Tamara/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 2]]
+  Rendered questions/_answer_form.html.erb (1.5ms)
+  Rendered questions/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 50ms (Views: 39.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:40:17 -0500
+
+
+Started POST "/questions/2/answers" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"ih;iewhg;JKHG;KJbgvjkb"}, "commit"=>"Answer this question", "question_id"=>"2"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 17:41:11.450632"], ["description", "ih;iewhg;JKHG;KJbgvjkb"], ["question_id", 2], ["updated_at", "2014-12-16 17:41:11.450632"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 13ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 62ms (Views: 55.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:11 -0500
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:41:22 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 3]]
+  Rendered questions/_answer_form.html.erb (1.4ms)
+  Rendered questions/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 54ms (Views: 43.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/questions/3/answers" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required."}, "commit"=>"Answer this question", "question_id"=>"3"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 17:41:29.037051"], ["description", "Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required."], ["question_id", 3], ["updated_at", "2014-12-16 17:41:29.037051"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:41:29 -0500
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:41:30 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 3]]
+  Rendered questions/_answer_form.html.erb (1.1ms)
+  Rendered questions/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 118ms (Views: 103.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:35 -0500
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-12-16 12:42:41 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 1]]
+  Rendered questions/_answer_form.html.erb (51.9ms)
+  Rendered questions/show.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 120ms (Views: 107.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/questions/1/answers" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"works!Now you can start developing your awesome application for Flowdock."}, "commit"=>"Answer this question", "question_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 17:42:45.701732"], ["description", "works!Now you can start developing your awesome application for Flowdock."], ["question_id", 1], ["updated_at", "2014-12-16 17:42:45.701732"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 15ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:42:45 -0500
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-12-16 12:42:47 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 1]]
+  Rendered questions/_answer_form.html.erb (1.0ms)
+  Rendered questions/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/questions/1/answers" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"new answer"}, "commit"=>"Answer this question", "question_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 17:43:01.199653"], ["description", "new answer"], ["question_id", 1], ["updated_at", "2014-12-16 17:43:01.199653"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 20ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 112ms (Views: 47.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:43:01 -0500
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-12-16 12:43:02 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 1]]
+  Rendered questions/_answer_form.html.erb (1.3ms)
+  Rendered questions/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/questions/1/answers" for 127.0.0.1 at 2014-12-16 12:44:03 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NPF1onjCjiEHWSuBt42tRYzc+FNwIv/Guo8Y3T8bAx0=", "answer"=>{"description"=>"lkha;kfh;kahv"}, "commit"=>"Answer this question", "question_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answers" ("created_at", "description", "question_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 17:44:04.004652"], ["description", "lkha;kfh;kahv"], ["question_id", 1], ["updated_at", "2014-12-16 17:44:04.004652"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 13ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"   ORDER BY "questions"."created_at" DESC
+  Rendered questions/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 56ms (Views: 51.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:44:04 -0500
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-12-16 12:44:05 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = ?  [["question_id", 1]]
+  Rendered questions/_answer_form.html.erb (1.4ms)
+  Rendered questions/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.3ms)
