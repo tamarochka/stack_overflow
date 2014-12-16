@@ -1,0 +1,12 @@
+<tr>
+    <th></th>
+  </tr>
+  <% @questions.each do |question|%>
+    <tr>
+      <ul>
+      <li><%= question.title %></li></ul>
+      <td><%= link_to "Show", question %> </td>
+      <td><%= link_to "Edit", question %> </td>
+      <td><%= link_to "Destroy", question %> </td>
+        <% end %>
+      </td>

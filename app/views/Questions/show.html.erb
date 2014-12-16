@@ -1,0 +1,22 @@
+<tr>
+Title: <%= @question.title %>
+</tr>
+<tr>
+  Description: <%= @question.description %>
+</tr>
+<td><%= link_to "Edit" %> </td>
+<td><%= link_to "Destroy" %> </td>
+
+
+<ul>Answers: <% @question.answers.each do |answer|%>
+  <li><%= answer.description %></li>
+  <% end %></ul>
+
+<tr><%= form_for @answer,  url: question_answers_path(@question), remote: true do |f| %>
+  <p>
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+    <%= f.label :Your_answer %><br />
+    <%= f.text_area :description, rows:5 %>
+  </p>
+  <p><%= f.submit "Answer this question" %></p>
+<% end %></tr>
