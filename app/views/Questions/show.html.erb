@@ -1,24 +1,25 @@
-<tr>
-Title: <%= @question.title %>
-</tr>
+<h3>
+Question: <%= @question.title %>
+</h3>
 
-<tr>
-  Description: <%= @question.description %>
-</tr>
-<td><%= link_to "Edit", edit_question_path(@question) %> </td>
+
+<%= @question.description %>
+<p>
+<td><%= link_to "Edit", edit_question_path(@question) %><td>
 <td><%= link_to "Delete", {:controller => "questions",:action =>
-'destroy', :id => @question.id }, :method => :delete %> </td>
+  'destroy', :id => @question.id }, :method => :delete %></td>
+</p>
 
-
-<ul>Answers: <% @question.answers.each do |answer|%>
-  <li><%= answer.description %></li>
-  <% end %></ul>
-
-<tr><%= form_for @answer,url: question_answers_path(@question) do |f| %>
+<p>
+  <h3>Answers:</h3>
+  <% @question.answers.each do |answer|%>
+    <%= answer.description %>
+  <% end %>
+</p>
+<%= form_for @answer,url: question_answers_path(@question) do |f| %>
   <p>
-
     <%= f.label :Your_answer %><br />
     <%= f.text_area :description, rows:5 %>
   </p>
   <p><%= f.submit "Answer this question" %></p>
-<% end %></tr>
+<% end %>

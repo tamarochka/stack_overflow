@@ -1,10 +1,9 @@
-<tr>
-    <th></th>
-  </tr>
+<h3>Questions </h3>
   <% @questions.each do |question|%>
-    <tr>
-      <ul>
-      <li><%= question.title %></li></ul>
-      <td><%= link_to "Show more", question %> </td>
+
+
+      <li><%= question.title %></li>
+      <p><%= link_to "Show more", question %></p>
+
+
         <% end %>
-      </td>
