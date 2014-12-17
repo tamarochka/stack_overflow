@@ -11,6 +11,7 @@ class QuestionsController < ApplicationController
 
     @question = Question.find(params[:id])
     @answer = Answer.new
+
   end
 
   def create
@@ -19,7 +20,7 @@ class QuestionsController < ApplicationController
       flash[:notice] = "Your question was submitted!"
       redirect_to questions_path
     else
-      flash.now[:notice] = "There were problems processing your order!"
+      # flash.now[:notice] = "There were problems processing your order!"
       render :new
     end
   end

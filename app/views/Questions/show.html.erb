@@ -2,6 +2,13 @@
 Question: <%= @question.title %>
 </h3>
 
+<div class="errors">
+  <ul>
+    <% @question.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+</div>
 
 <%= @question.description %>
 <p>
